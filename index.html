@@ -1,84 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fernando Huarcaya | Data Analytics &amp; FP&amp;A</title>
-  <meta name="description" content="Perfil profesional de Fernando Huarcaya: analista con más de 5 años en FP&A, operaciones comerciales y reporting de negocio.">
+  <meta name="description" content="Professional profile of Fernando Huarcaya: analyst with 5+ years in FP&A, commercial operations and business performance reporting.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Apply the saved language before first paint to avoid a flash of the wrong language
+    try {
+      var saved = localStorage.getItem("lang");
+      if (saved === "es" || saved === "en") document.documentElement.lang = saved;
+    } catch (e) {}
+  </script>
 </head>
 <body>
 
   <header class="site-header">
     <nav class="nav container">
-      <a href="#inicio" class="logo">FH</a>
+      <a href="#home" class="logo">FH</a>
       <ul class="nav-links">
-        <li><a href="#perfil">Perfil</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#formacion">Formación</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#profile"><span data-lang="en">Profile</span><span data-lang="es">Perfil</span></a></li>
+        <li><a href="#experience"><span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></a></li>
+        <li><a href="#education"><span data-lang="en">Education</span><span data-lang="es">Formación</span></a></li>
+        <li><a href="#skills"><span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></a></li>
+        <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="es">Contacto</span></a></li>
       </ul>
+      <div class="lang-switch" role="group" aria-label="Language / Idioma">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-set-lang="es" aria-pressed="false">ES</button>
+      </div>
     </nav>
   </header>
 
   <main>
 
     <!-- HERO -->
-    <section id="inicio" class="hero container">
-      <p class="eyebrow">Madrid, España</p>
+    <section id="home" class="hero container">
+      <p class="eyebrow"><span data-lang="en">Madrid, Spain</span><span data-lang="es">Madrid, España</span></p>
       <h1>Fernando Huarcaya</h1>
       <p class="hero-role">Data Analytics &nbsp;·&nbsp; FP&amp;A</p>
       <p class="hero-lead">
-        Analista con más de 5 años de experiencia en planificación financiera, operaciones comerciales
-        y reporting de negocio en los sectores farmacéutico, industrial y retail.
+        <span data-lang="en">Analyst with 5+ years in financial planning, commercial operations and business performance reporting across the pharmaceutical, manufacturing and retail sectors.</span>
+        <span data-lang="es">Analista con más de 5 años de experiencia en planificación financiera, operaciones comerciales y reporting de negocio en los sectores farmacéutico, industrial y retail.</span>
       </p>
       <div class="hero-actions">
-        <a href="#contacto" class="btn btn-primary">Contactar</a>
+        <a href="#contact" class="btn btn-primary"><span data-lang="en">Get in touch</span><span data-lang="es">Contactar</span></a>
         <a href="https://www.linkedin.com/in/ferhc1901/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
       </div>
     </section>
 
-    <!-- PERFIL -->
-    <section id="perfil" class="section container">
-      <h2 class="section-title"><span>01</span> Perfil</h2>
+    <!-- PROFILE -->
+    <section id="profile" class="section container">
+      <h2 class="section-title"><span class="num">01</span> <span data-lang="en">Profile</span><span data-lang="es">Perfil</span></h2>
       <div class="section-body">
-        <p>
+        <p data-lang="en">
+          5+ years in FP&amp;A, commercial operations and business performance reporting across pharmaceutical,
+          manufacturing and retail businesses in Peru and Panama. Experienced in sales, stock and repositions
+          reporting from SAP, supplier reconciliations, working-capital and inventory analysis, and process
+          automation with Power Apps and Power Automate.
+        </p>
+        <p data-lang="es">
           Más de 5 años en FP&amp;A, operaciones comerciales y reporting de rendimiento de negocio en empresas
           farmacéuticas, industriales y de retail en Perú y Panamá. Experiencia en reporting de ventas, stock
           y reposiciones desde SAP, conciliaciones con proveedores, análisis de capital circulante e inventario,
           y automatización de procesos con Power Apps y Power Automate.
         </p>
-        <p>
+        <p data-lang="en">
+          Strong in advanced Excel, SQL, Python and Power BI. Currently completing an
+          <strong>MSc in Data Science, Big Data &amp; Business Analytics</strong> at Universidad Complutense de Madrid.
+        </p>
+        <p data-lang="es">
           Dominio de Excel avanzado, SQL, Python y Power BI. Actualmente curso el
           <strong>MSc en Data Science, Big Data &amp; Business Analytics</strong> en la Universidad Complutense de Madrid.
         </p>
         <ul class="stats">
-          <li><strong>5+</strong><span>años de experiencia</span></li>
-          <li><strong>3</strong><span>sectores</span></li>
-          <li><strong>2</strong><span>países</span></li>
-          <li><strong>C1</strong><span>inglés (IELTS)</span></li>
+          <li><strong>5+</strong><span data-lang="en">years of experience</span><span data-lang="es">años de experiencia</span></li>
+          <li><strong>3</strong><span data-lang="en">industries</span><span data-lang="es">sectores</span></li>
+          <li><strong>2</strong><span data-lang="en">countries</span><span data-lang="es">países</span></li>
+          <li><strong>C1</strong><span data-lang="en">English (IELTS)</span><span data-lang="es">inglés (IELTS)</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="section container">
-      <h2 class="section-title"><span>02</span> Experiencia</h2>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title"><span class="num">02</span> <span data-lang="en">Experience</span><span data-lang="es">Experiencia</span></h2>
       <div class="section-body timeline">
 
         <article class="job">
           <header class="job-header">
             <div>
               <h3>Sr. Financial Analyst</h3>
-              <p class="job-company">2RM S.A.C. · Fabricante de equipos mineros · Perú</p>
+              <p class="job-company">2RM S.A.C. · <span data-lang="en">Mining equipment manufacturer · Peru</span><span data-lang="es">Fabricante de equipos mineros · Perú</span></p>
             </div>
             <time>01/2025 – 07/2026</time>
           </header>
-          <ul>
+          <ul data-lang="en">
+            <li>Led the annual budget and the monthly Budget-vs-Actual variance analysis, reviewing deviations by department and coordinating adjustments with each area before presenting to the Finance Manager.</li>
+            <li>Owned the AR/AP performance cycle and provisioning models, translating results into recommendations for quarterly executive and board-level reporting.</li>
+            <li>Designed and ran the corporate liquidity framework through a weekly cash flow forecast, anticipating funding gaps and supporting treasury decisions.</li>
+            <li>Drove Cash Conversion Cycle improvement by diagnosing working-capital bottlenecks between receivables (DSO) and payables, shortening the CCC and releasing cash.</li>
+          </ul>
+          <ul data-lang="es">
             <li>Lideré el presupuesto anual y el análisis mensual de desviaciones Budget vs. Actual por departamento, coordinando ajustes con cada área antes de presentarlos a la Dirección Financiera.</li>
             <li>Responsable del ciclo de cuentas por cobrar y pagar y de los modelos de provisiones, traduciendo resultados en recomendaciones para el reporting trimestral a dirección y consejo.</li>
             <li>Diseñé el marco de liquidez corporativa mediante un forecast semanal de flujo de caja para anticipar necesidades de financiación y apoyar decisiones de tesorería.</li>
@@ -90,11 +117,17 @@
           <header class="job-header">
             <div>
               <h3>Financial Analyst</h3>
-              <p class="job-company">Grupo Dokka · Distribuidor farmacéutico · Panamá</p>
+              <p class="job-company">Grupo Dokka · <span data-lang="en">Pharmaceutical distributor · Panama</span><span data-lang="es">Distribuidor farmacéutico · Panamá</span></p>
             </div>
             <time>05/2024 – 11/2024</time>
           </header>
-          <ul>
+          <ul data-lang="en">
+            <li>Developed a comprehensive SKU-level profitability analysis, modelling the company P&amp;L from the corporate level down to individual SKUs to identify margin drivers.</li>
+            <li>Managed monthly AR/AP reporting, AR provisions and the cash conversion cycle, adding Budget-vs-Actual analysis and key KPIs to quarterly Board presentations.</li>
+            <li>Ran the annual budgeting process end to end and presented it to the CFO, with a focus on calculating and maximizing ROI for each department.</li>
+            <li>Supported the Oracle ERP implementation through bulk data uploads and validations, and improved reporting efficiency with Power Query automation.</li>
+          </ul>
+          <ul data-lang="es">
             <li>Desarrollé un análisis de rentabilidad a nivel de SKU, modelando la cuenta de resultados desde el nivel corporativo hasta cada producto para identificar los drivers de margen.</li>
             <li>Gestioné el reporting mensual de AR/AP, provisiones y ciclo de caja, integrando análisis Budget vs. Actual y KPIs en las presentaciones trimestrales al Consejo.</li>
             <li>Responsable del proceso presupuestario anual de principio a fin, con foco en calcular y maximizar el ROI de cada departamento.</li>
@@ -106,11 +139,17 @@
           <header class="job-header">
             <div>
               <h3>Commercial Operations Analyst</h3>
-              <p class="job-company">MSD · Compañía farmacéutica · Panamá</p>
+              <p class="job-company">MSD · <span data-lang="en">Pharmaceutical company · Panama</span><span data-lang="es">Compañía farmacéutica · Panamá</span></p>
             </div>
             <time>11/2021 – 03/2024</time>
           </header>
-          <ul>
+          <ul data-lang="en">
+            <li>Built and maintained weekly Power BI dashboards to monitor sales performance, KPIs and margins, using data extracted from SAP and Salesforce.</li>
+            <li>Automated manual processes with Power Apps and Power Automate (approval flows, validations, data loading and sales-force commissions), cutting turnaround from about a week to 2–3 hours.</li>
+            <li>Executed monthly reporting cycles for sales, stock, repositions, pricing and commission validations.</li>
+            <li>Reconciled all supplier bills, credit notes and debit notes, maintaining a 90–95% accuracy rate month over month.</li>
+          </ul>
+          <ul data-lang="es">
             <li>Desarrollé y mantuve dashboards semanales en Power BI para seguir ventas, KPIs y márgenes, con datos extraídos de SAP y Salesforce.</li>
             <li>Automaticé procesos manuales con Power Apps y Power Automate (flujos de aprobación, validaciones, cargas de datos y comisiones de la fuerza de ventas), reduciendo el tiempo de una semana a 2–3 horas.</li>
             <li>Ejecuté los ciclos mensuales de reporting de ventas, stock, reposiciones, precios y validación de comisiones.</li>
@@ -122,11 +161,15 @@
           <header class="job-header">
             <div>
               <h3>Financial Planning Analyst</h3>
-              <p class="job-company">Oechsle · Retail · Perú</p>
+              <p class="job-company">Oechsle · Retail · <span data-lang="en">Peru</span><span data-lang="es">Perú</span></p>
             </div>
             <time>03/2021 – 10/2021</time>
           </header>
-          <ul>
+          <ul data-lang="en">
+            <li>Conducted monthly business performance analysis, with detailed reporting on accounts receivable, accounts payable and inventory trends.</li>
+            <li>Consolidated business-line performance and prepared executive presentations for management.</li>
+          </ul>
+          <ul data-lang="es">
             <li>Análisis mensual del rendimiento del negocio con reporting de cuentas por cobrar, por pagar y tendencias de inventario.</li>
             <li>Consolidé el rendimiento por línea de negocio y preparé presentaciones ejecutivas para la dirección.</li>
           </ul>
@@ -135,74 +178,98 @@
       </div>
     </section>
 
-    <!-- FORMACIÓN -->
-    <section id="formacion" class="section container">
-      <h2 class="section-title"><span>03</span> Formación</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2 class="section-title"><span class="num">03</span> <span data-lang="en">Education</span><span data-lang="es">Formación</span></h2>
       <div class="section-body cards">
         <article class="card">
-          <time>09/2026 – actualidad</time>
+          <time>09/2026 – <span data-lang="en">present</span><span data-lang="es">actualidad</span></time>
           <h3>MSc Data Science, Big Data &amp; Business Analytics</h3>
-          <p>Universidad Complutense de Madrid · España</p>
+          <p>Universidad Complutense de Madrid · <span data-lang="en">Spain</span><span data-lang="es">España</span></p>
         </article>
         <article class="card">
           <time>2022</time>
-          <h3>Grado en Economía y Finanzas</h3>
-          <p>Universidad San Ignacio de Loyola · Perú</p>
+          <h3><span data-lang="en">Bachelor of Economics &amp; Finance</span><span data-lang="es">Grado en Economía y Finanzas</span></h3>
+          <p>Universidad San Ignacio de Loyola · <span data-lang="en">Peru</span><span data-lang="es">Perú</span></p>
         </article>
         <article class="card">
-          <time>En curso</time>
+          <time><span data-lang="en">In progress</span><span data-lang="es">En curso</span></time>
           <h3>HackerRank · SQL &amp; Python</h3>
           <p><a href="https://www.hackerrank.com/profile/fhuarcay" target="_blank" rel="noopener">hackerrank.com/profile/fhuarcay</a></p>
         </article>
       </div>
     </section>
 
-    <!-- HABILIDADES -->
-    <section id="habilidades" class="section container">
-      <h2 class="section-title"><span>04</span> Habilidades</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title"><span class="num">04</span> <span data-lang="en">Skills</span><span data-lang="es">Habilidades</span></h2>
       <div class="section-body skills">
         <div class="skill-group">
-          <h3>Datos y herramientas</h3>
+          <h3><span data-lang="en">Data &amp; tools</span><span data-lang="es">Datos y herramientas</span></h3>
           <ul class="tags">
-            <li>Excel avanzado</li><li>Power BI</li><li>SQL</li><li>MySQL</li><li>PostgreSQL</li>
+            <li><span data-lang="en">Advanced Excel</span><span data-lang="es">Excel avanzado</span></li>
+            <li>Power BI</li><li>SQL</li><li>MySQL</li><li>PostgreSQL</li>
             <li>Snowflake</li><li>Python</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li>
             <li>Tableau</li><li>Power Query</li><li>Power Apps</li><li>Power Automate</li>
-            <li>SAP</li><li>Salesforce</li><li>Oracle ERP</li><li>GitHub</li><li>IA generativa</li>
+            <li>SAP</li><li>Salesforce</li><li>Oracle ERP</li><li>GitHub</li>
+            <li><span data-lang="en">Generative AI</span><span data-lang="es">IA generativa</span></li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Finanzas y análisis</h3>
+          <h3><span data-lang="en">Finance &amp; analytics</span><span data-lang="es">Finanzas y análisis</span></h3>
           <ul class="tags">
-            <li>Presupuestos y forecasting</li><li>Análisis de desviaciones (BvA)</li>
-            <li>Cash flow y capital circulante</li><li>Dashboards de KPIs</li>
-            <li>Conciliación y validación de datos</li><li>Automatización de procesos</li>
+            <li><span data-lang="en">Budgeting &amp; forecasting</span><span data-lang="es">Presupuestos y forecasting</span></li>
+            <li><span data-lang="en">Variance analysis (BvA)</span><span data-lang="es">Análisis de desviaciones (BvA)</span></li>
+            <li><span data-lang="en">Cash flow &amp; working capital</span><span data-lang="es">Cash flow y capital circulante</span></li>
+            <li><span data-lang="en">KPI dashboards</span><span data-lang="es">Dashboards de KPIs</span></li>
+            <li><span data-lang="en">Data reconciliation &amp; validation</span><span data-lang="es">Conciliación y validación de datos</span></li>
+            <li><span data-lang="en">Process automation</span><span data-lang="es">Automatización de procesos</span></li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Negocio</h3>
+          <h3><span data-lang="en">Business</span><span data-lang="es">Negocio</span></h3>
           <ul class="tags">
-            <li>Reporting a dirección y consejo</li><li>Business partnering</li>
-            <li>Colaboración regional y multifuncional</li><li>FP&amp;A</li>
+            <li><span data-lang="en">Executive &amp; board reporting</span><span data-lang="es">Reporting a dirección y consejo</span></li>
+            <li>Business partnering</li>
+            <li><span data-lang="en">Cross-functional &amp; regional collaboration</span><span data-lang="es">Colaboración regional y multifuncional</span></li>
+            <li>FP&amp;A</li>
           </ul>
         </div>
         <div class="skill-group">
-          <h3>Idiomas</h3>
+          <h3><span data-lang="en">Languages</span><span data-lang="es">Idiomas</span></h3>
           <ul class="tags">
-            <li>Español · nativo</li><li>Inglés · C1 (IELTS)</li><li>Portugués · intermedio</li>
+            <li><span data-lang="en">Spanish · native</span><span data-lang="es">Español · nativo</span></li>
+            <li><span data-lang="en">English · C1 (IELTS)</span><span data-lang="es">Inglés · C1 (IELTS)</span></li>
+            <li><span data-lang="en">Portuguese · intermediate</span><span data-lang="es">Portugués · intermedio</span></li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto" class="section container contact">
-      <h2 class="section-title"><span>05</span> Contacto</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title"><span class="num">05</span> <span data-lang="en">Contact</span><span data-lang="es">Contacto</span></h2>
       <div class="section-body">
-        <p class="contact-lead">¿Hablamos? Estoy abierto a nuevas oportunidades en datos y finanzas.</p>
+        <p class="contact-lead">
+          <span data-lang="en">Let's talk. I'm open to new opportunities in data and finance.</span>
+          <span data-lang="es">¿Hablamos? Estoy abierto a nuevas oportunidades en datos y finanzas.</span>
+        </p>
         <ul class="contact-list">
-          <li><span>Email</span><a href="mailto:fhuarcay@ucm.es">fhuarcay@ucm.es</a></li>
-          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/ferhc1901/" target="_blank" rel="noopener">linkedin.com/in/ferhc1901</a></li>
-          <li><span>Ubicación</span><p>Madrid, España</p></li>
+          <li>
+            <span class="label">Email</span>
+            <div class="values">
+              <a href="mailto:fernando.hc1901@gmail.com">fernando.hc1901@gmail.com</a>
+              <a href="mailto:fhuarcay@ucm.es">fhuarcay@ucm.es</a>
+            </div>
+          </li>
+          <li>
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/ferhc1901/" target="_blank" rel="noopener">linkedin.com/in/ferhc1901</a>
+          </li>
+          <li>
+            <span class="label"><span data-lang="en">Location</span><span data-lang="es">Ubicación</span></span>
+            <p><span data-lang="en">Madrid, Spain</span><span data-lang="es">Madrid, España</span></p>
+          </li>
         </ul>
       </div>
     </section>
@@ -215,5 +282,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
