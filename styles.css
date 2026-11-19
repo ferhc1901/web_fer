@@ -347,6 +347,12 @@ time {
 .contact-list a { font-weight: 500; overflow-wrap: anywhere; justify-self: start; }
 .contact-list a:hover { opacity: 0.6; }
 
+/* ---------- Repositories ---------- */
+.repo-group + .repo-group { margin-top: 48px; }
+.repo-group-title { font-size: 1.1rem; font-weight: 600; }
+.repo-group-sub { font-size: 0.875rem; color: var(--muted); margin: 4px 0 20px; }
+.repo-card h3 { margin-top: 8px; }
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--border);
